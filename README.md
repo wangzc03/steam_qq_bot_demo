@@ -1,0 +1,2 @@
+# steam_qq_bot_demo
+这是一个使用python库a2s 和onebot接口写的一个能查询steam游戏服务器人数的demo
