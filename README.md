@@ -10,7 +10,7 @@ qq新版支持很多接口 很方便<br>
 在你购买服务器后，你进入了windows server 20xx版<br>
 你需要：<br>
 1.安装python环境 ，配置pip镜像 使用pip安装依赖<br>
-2.安装qq，安装nonebot2，并运行<br>
+2.安装qq配置bot端口，安装nonebot2并运行<br>
 3.运行本脚本，在群聊里输入关键字 触发查询并发送<br>
 
 先获取你要搜索的服务器ip，然后使用浏览器steam接口访问（记得修改ip）获取json 得到你要查询的服务器端口<br>
