@@ -4,7 +4,10 @@ import requests
 from fastapi import FastAPI, Request
 from concurrent.futures import ThreadPoolExecutor
 
+# 改成你的ip 然后查看端口是27015还是别的什么
 # http://api.steampowered.com/ISteamApps/GetServersAtAddress/v0001?addr=123.456.78.90
+# 文档
+# https://python-abc.xyz/qqbot/onebot-11/api/public
 rsQuery = '越南1'
 roQuery = '红管11'
 testQuery = "ping"
@@ -78,7 +81,7 @@ async def handle_message(request: Request):
         sender_nickname = data['sender']['nickname']
         sender_card = data['sender']['card']
         print(f"Message from Group {group_id}: '{message_content}' (Sent by {sender_nickname} aka {sender_card})")
-        if "越南1" in message_content:
+        if rsQuery in message_content:
             send_ping(group_id, queryRs2())
         if roQuery in message_content:
             send_ping(group_id, queryRo2())  
